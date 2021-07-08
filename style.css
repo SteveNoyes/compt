@@ -1,0 +1,194 @@
+/* css reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* css reset end */
+
+
+/* colors */
+
+:root {
+  --prime-bright-orange: hsl(31, 77%, 52%);
+	--prime-dark-cyan: hsl(184, 100%, 22%);
+	--prime-very-dark-cyan:hsl(179, 100%, 13%);
+	/* graphs */
+	--tranparent-white: hsla(0, 0%, 100%, 0.75);
+	/* background, headings, buttons */
+	--very-light-grey: hsl(0, 0%, 95%);
+
+}
+
+/* utility  */
+
+* {
+	font-size: 15px;
+}
+
+body {
+	background-color: var(--very-light-grey);
+}
+
+element {
+  background-color: var(--very-light-grey);
+}
+
+h1 {
+	font-family: 'Big Shoulders Display', cursive;
+	font-size: 2.3em;
+	color: var(--tranparent-white);
+}
+
+p, button {
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+img {
+	margin: 1em 0 2em;
+}
+
+button {
+	font-size: .8em;
+	margin-top: .3em;
+	padding: 1em 1.3em;
+	border-radius: 30px;
+	border: none;
+	background-color: var(--very-light-grey);
+}
+
+/* card build */
+
+.wrapper {
+	width: 70%;
+	margin: auto;
+}
+
+.card {
+  margin: 3em auto 0;
+  height: 70vh;
+	border-radius: 6px 6px 0 0;
+	background-color: var(--prime-bright-orange);
+}
+
+.card-1 {
+  height: 70vh;
+	background-color: var(--prime-dark-cyan);
+}
+
+.card-2 {
+  height: 70vh;
+	border-radius: 0 0 6px 6px;
+	background-color: var(--prime-very-dark-cyan);
+}
+
+.content-wrap {
+  width: 80%;
+  margin: auto;
+  padding: 2em;
+}
+
+.content-wrap-1, .content-wrap-1 {
+  width: 80%;
+  margin: auto;
+  padding: 2em;
+}
+
+.graph {
+	width: 91%;
+	margin: 1.4em 0 1em;
+	color: var(--tranparent-white);
+}
+
+.button-color {
+	color: var(--prime-bright-orange);
+}
+
+.button-click:active {
+	border: 2px solid white;
+	background-color: var(--prime-bright-orange);
+	color: white;
+}
+
+.button-color-1 {
+	color: var(--prime-dark-cyan);
+}
+
+.button-click-1:active {
+	border: 2px solid white;
+	background-color: var(--prime-dark-cyan);
+	color: white;
+}
+
+.button-color-2 {
+	color: var(--prime-very-dark-cyan);
+}
+
+.button-click-2:active {
+	border: 2px solid white;
+	background-color: var(--prime-very-dark-cyan);
+	color: white;
+}
+
+/* media query */
+
+@media only screen and (min-width: 1440px) {
+
+  .wrapper {
+		display: flex;
+	}
+
+	.card {
+		border-radius: 6px 0 0 6px;
+	}
+
+  .card-1 {
+		margin: 3em auto 0;
+	}
+
+	.card-2 {
+		margin: 3em auto 0;
+		border-radius: 0 6px 6px 0;
+	}
+
+} /* media query end */
