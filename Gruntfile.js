@@ -3,6 +3,14 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    uglify: {
+      my_target: {
+        files: {
+          'script/main.min.js': ['script/script.js']
+        }
+      }
+    },
+
     cssmin: {
       options: {
         mergeIntoShorthands: false,
@@ -17,7 +25,7 @@ module.exports = function(grunt) {
 
     watch: {
       scripts: {
-        files: ['**/*.css'],
+        files: ['css/*.css'],
         tasks: ['cssmin'],
         options: {
           spawn: false,
@@ -27,6 +35,7 @@ module.exports = function(grunt) {
 
   });
   // Load plugin
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
 };

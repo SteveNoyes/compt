@@ -15,9 +15,6 @@
 body {
 	background-color: var(--very-light-grey);
 }
-element {
-  background-color: var(--very-light-grey);
-}
 h1 {
 	font-family: 'Big Shoulders Display', cursive;
 	font-size: 2.3em;
@@ -76,25 +73,25 @@ button {
 	color: var(--prime-bright-orange);
 }
 .button-click:active {
-	border: 2px solid white;
+	border: 2px solid var(--tranparent-white);
 	background-color: var(--prime-bright-orange);
-	color: white;
+	color: var(--tranparent-white);
 }
 .button-color-1 {
 	color: var(--prime-dark-cyan);
 }
 .button-click-1:active {
-	border: 2px solid white;
+	border: 2px solid var(--tranparent-white);
 	background-color: var(--prime-dark-cyan);
-	color: white;
+	color: var(--tranparent-white);
 }
 .button-color-2 {
 	color: var(--prime-very-dark-cyan);
 }
 .button-click-2:active {
-	border: 2px solid white;
+	border: 2px solid var(--tranparent-white);
 	background-color: var(--prime-very-dark-cyan);
-	color: white;
+	color: var(--tranparent-white);
 }
 /* media query */
 @media only screen and (min-width: 1440px) {

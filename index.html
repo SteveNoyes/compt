@@ -15,7 +15,12 @@
   <title>Compt</title>
 </head>
 <body>
-  <div class="wrapper">
+  <p id="para">Don't touch these buttons</p>
+  <button onclick="changeColor('blue');">blue</button>
+  <button onclick="changeColor('red');">red</button>
+  <button onclick="gone();">gone</button>
+
+  <div class="wrapper" id="bdy">
     <div class="card">
       <div class="content-wrap">
         <img src="img/icon-sedans.svg" alt="svg">
@@ -44,6 +49,7 @@
       </div> <!-- content wrap end -->
     </div> <!-- card end -->
   </div> <!-- wrapper end -->
+  <script src="script/script.js" charset="utf-8"></script>
   <script src="Gruntfile.js" charset="utf-8"></script>
 </body>
 </html>
